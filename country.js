@@ -18,6 +18,8 @@ var canada = new Country ("Canada", "English", "Hello World!", ["red", "white", 
 var india = new Country ("India", "Hindi", "Namaste Duniya!", ["orange", "white", "green"]);
 var mali = new Country ("Mali", "French", "Bonjour le monde!", ["green", "yellow", "red"]);
 var vietNam = new Country ("Viet Nam", "Vietnamese", "Chào thế giới!", ["red", "yellow", "yellow"]);
+var spain = new Country ("Spain", "Spanish", "Hola Mundo!", ["red", "yellow", "red"]);
+var germany = new Country ("Germany", "German", "Hallo Welt", ["black", "red", "yellow"]);
 
 function SwitchCountry()
 {
@@ -40,6 +42,16 @@ function SwitchCountry()
     else if (input === "Viet Nam") {
         country = vietNam;
     }
+    else if (input === "Viet Nam") {
+        country = vietNam;
+    }
+    else if (input === "Spain") {
+        country = spain;
+    }
+    else if (input === "Germany") {
+        country = germany;
+    }
+
 
     $("#Color1").css("background-color", country.colors[0]);
     $("#Color2").css("background-color", country.colors[1]);
